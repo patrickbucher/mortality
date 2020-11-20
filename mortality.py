@@ -85,7 +85,6 @@ def main():
     data = pd.concat([history, current])
 
     data['pop'] = data['year'].map(population)
-    data['dead_per_100k'] = data['deads'] / (data['pop'] / 100_000)
 
     data = data.groupby('year').aggregate({'deads': sum, 'pop': max})
     data['rate'] = data['deads'] / data['pop']
