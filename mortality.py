@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 import io
-import os
 import requests
-import sys
 
 import pandas as pd
 
@@ -30,13 +28,6 @@ def get_text(url):
     if r.status_code != 200:
         raise ValueError(f'fetch url {url}: status {r.status_code}')
     return r.content.decode('iso-8859-1')
-
-
-def get_file(url):
-    r = request.get(url, allow_redirects=True)
-    if r.status_code != 200:
-        raise ValueError(f'fetch url {url}: status {r.status_code}')
-    return r.content
 
 
 def tidy_csv(text):
@@ -85,8 +76,13 @@ def main():
     data = pd.concat([history, current])
 
     data['pop'] = data['year'].map(population)
+    data['up_to_week'] = max_week
 
-    data = data.groupby('year').aggregate({'deads': sum, 'pop': max})
+    data = data.groupby('year').aggregate({
+        'up_to_week': max,
+        'deads': sum,
+        'pop': max
+    })
     data['rate'] = data['deads'] / data['pop']
     data['%'] = (data['deads'] / data['pop']) * 100
     print(data)
