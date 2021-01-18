@@ -3,7 +3,7 @@ Calculate Switzerland's mortality statistics up to the current year's week.
 # Sources
 
 - [Mortality 2010-2019](https://www.bfs.admin.ch/bfs/de/home/statistiken/gesundheit/gesundheitszustand/sterblichkeit-todesursachen.assetdetail.12607336.html)
-- [Mortality 2020](https://www.bfs.admin.ch/bfs/de/home/statistiken/gesundheit/gesundheitszustand/sterblichkeit-todesursachen.assetdetail.15304923.html)
+- [Mortality 2020](https://www.bfs.admin.ch/bfs/de/home/statistiken/gesundheit/gesundheitszustand/sterblichkeit-todesursachen.assetdetail.15464161.html)
 - [Population 1861-2019](https://www.bfs.admin.ch/bfs/de/home/statistiken/bevoelkerung/stand-entwicklung/bevoelkerung.assetdetail.13707405.html)
 - [Population 2020](https://www.bfs.admin.ch/bfs/de/home/statistiken/bevoelkerung/stand-entwicklung/bevoelkerung.assetdetail.14941425.html)
 

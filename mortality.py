@@ -5,7 +5,7 @@ import requests
 
 import pandas as pd
 
-current_url = 'https://www.bfs.admin.ch/bfsstatic/dam/assets/15304923/master'
+current_url = 'https://www.bfs.admin.ch/bfsstatic/dam/assets/15464161/master'
 history_url = 'https://www.bfs.admin.ch/bfsstatic/dam/assets/12607336/master'
 
 population = {
@@ -19,7 +19,7 @@ population = {
     2017: 8419550,
     2018: 8484130,
     2019: 8544527,
-    2020: 8655118,
+    2020: 8655118 ,
 }
 
 
